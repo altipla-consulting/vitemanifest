@@ -17,6 +17,7 @@ type Chunk struct {
 	IsDynamicEntry bool
 	IsEntry        bool
 	DynamicImports []string
+	Imports        []string
 }
 
 // Read the manifest file from its standard location of `dist/manifest.json`.
