@@ -20,9 +20,9 @@ type Chunk struct {
 	Imports        []string
 }
 
-// Read the manifest file from its standard location of `dist/manifest.json`.
+// Read the manifest file from its standard location of `dist/.vite/manifest.json`.
 func Read() (File, error) {
-	return ReadPath("dist/manifest.json")
+	return ReadPath("dist/.vite/manifest.json")
 }
 
 // ReadPath reads the manifest file from a given path.
